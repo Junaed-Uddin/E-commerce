@@ -1,41 +1,36 @@
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 /* color pallet */
-:root{
-    --dark-pink:#FF3F8B;
-    --off-white:#FCEAE8;
-    --light-gray: #cacaca5a;
-    --light-yellow: #FEE2C9;
-    --light-blue: #BAE0FB;
+:root {
+  --gradient-violet: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  --gradient-green: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  --gradient-blue: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/* Utilities */
+.section-top{
+    margin-top: 100px;
 }
 
 /* carousel  */
-.carousel-item{
-    background-color: var(--off-white);
-}
-
-.slider-btn{
-    background-color: var(--dark-pink);
-}
-
-.price-tag{
-    color: var(--dark-pink);
+.image-slider {
+  background-image: var(--gradient-violet);
 }
 
 /* product-category  */
-.product-category-1{
-    background-color: var(--light-gray);
+.product-category-1 {
+  background-image: var(--gradient-green);
 }
-.product-category-2{
-    background-color: var(--light-yellow);
+.product-category-2 {
+  background-image: var(--gradient-violet);
 }
-.product-category-3{
-    background-color: var(--light-blue);
+.product-category-3 {
+  background-image: var(--gradient-blue);
 }
 
 /* subscribe section  */
-.subscribe-section{
-    background-color: var(--light-blue);
+.subscribe-section {
+  background-image: var(--gradient-violet);
 }
