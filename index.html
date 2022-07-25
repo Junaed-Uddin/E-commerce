@@ -30,17 +30,57 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav fw-bold ms-3 text-dark">
+                        <div class="navbar-nav fw-bold ms-md-3 text-dark">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                             <a class="nav-link" href="#shoes">Shoes</a>
                             <a class="nav-link" href="#backpack">Backpack</a>
                             <a class="nav-link" href="#subscribe">Subscribe</a>
+                        </div>
+                        <form class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row ms-auto" role="search">
+                            <input class="form-control me-2 my-2 my-sm-0 my-md-0 my-lg-0 my-xl-0" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                        <div class="ms-md-2 my-2">
+                            <i class="fa-solid fa-circle-user fa-2x" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"></i>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
         <!-- navbar end -->
+
+        <!-- login modal start-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title h3" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-1">
+                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="recipient-name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="recipient-name" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-evenly">
+                        <p>Don't have an account?</p>
+                        <div>
+                            <button type="button" class="btn btn-secondary">Sign up</button>
+                            <button type="button" class="btn btn-primary ms-1">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login modal end-->
 
         <!-- image slider start  -->
         <section id="carosel-section" class="section-top">
@@ -263,7 +303,7 @@
                         <form class="d-flex align-items-center mt-4">
                             <div>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                    aria-describedby="emailHelp" required>
                             </div>
                             <button type="submit" class="btn btn-secondary">Submit</button>
                         </form>
