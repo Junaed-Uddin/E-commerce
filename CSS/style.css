@@ -1,0 +1,36 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* color pallet */
+:root{
+    --dark-pink:#FF3F8B;
+    --off-white:#FCEAE8;
+    --light-gray: #cacaca5a;
+    --light-yellow: #FEE2C9;
+    --light-blue: #BAE0FB;
+}
+
+/* carousel  */
+.carousel-item{
+    background-color: var(--off-white);
+}
+
+.slider-btn{
+    background-color: var(--dark-pink);
+}
+
+.price-tag{
+    color: var(--dark-pink);
+}
+
+/* product-category  */
+.product-category-1{
+    background-color: var(--light-gray);
+}
+.product-category-2{
+    background-color: var(--light-yellow);
+}
+.product-category-3{
+    background-color: var(--light-blue);
+}
